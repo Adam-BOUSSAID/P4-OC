@@ -102,6 +102,11 @@ article {
     white-space: nowrap;
 }
 
+.card .card-title,
+.card h2 {
+    text-align: left;
+}
+
 cursor:hover { 
     pointer-events: visible;
 }
@@ -412,6 +417,9 @@ article a {
     margin: 0px;
     padding-left: 0%;
     padding-right: 0%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .nouveau {
