@@ -15,7 +15,7 @@
 
 header {
     width: 100%;
-    max-width: 425px;
+    /* max-width: 425px; */
     background-color: #EAEAEA;
 
     display: flex;
@@ -31,12 +31,12 @@ body {
     align-items: center;
     align-content: center;
 
-    max-width: 425px;
+    /* max-width: 425px; */
 }
 
 main {
     width: 100%;
-    max-width: 425px;
+    /* max-width: 425px; */
     padding: 0 0px;
     background-color: whitesmoke;
 
@@ -198,7 +198,7 @@ margin-bottom: 20px;
     background-color: white;
     box-sizing: border-box;
 
-    max-width: 425px;
+    /* max-width: 425px; */
     width: 100%;
     box-shadow: 0px 2px 4px 0px #00000026;
 
@@ -301,7 +301,7 @@ h1 {
     margin-bottom: 50px;
     background-color: white;
 
-    max-width: 425px;
+    /* max-width: 425px; */
 }
 
 .fonction h1 {
@@ -387,7 +387,7 @@ article a {
 
 .rest-card img {
     height: 70%;
-    width: 361px;
+    width: 280px;
 
     border-radius: 20px 20px 0px 0px;
 }
@@ -436,7 +436,7 @@ article a {
     position: absolute;
     border-radius: 3px;
     margin: 15px;
-    margin-left: 260px;
+    margin-left: 185px;
 }
 
 
@@ -448,7 +448,7 @@ footer {
 
     background-color: grey;
 
-    max-width: 425px;
+    /* max-width: 425px; */
     width: 100%;
     height: 100%;
     padding-left: 30px;
@@ -508,7 +508,7 @@ article img {
 
 .img-top {
     margin-bottom: -70px;
-    max-width: 425px;
+    /* max-width: 425px; */
     width: 100%;
 }
 
@@ -521,7 +521,7 @@ article img {
     flex-direction: column;
     align-items: flex-start;
 
-    max-width: 425px;
+    /* max-width: 425px; */
     width: 100%;
     text-overflow: ellipsis;
 }
@@ -659,14 +659,26 @@ p {
 }
 
 /********** MEDIA QUERIES ***********/
-@media (min-width: 426px) and (max-width: 1440px) {
+
+@media (min-width: 374px) {
+
+    .rest-card img {
+        width: 340px;
+    }
+
+    .nouveau {
+        margin-left: 245px ;
+    }
+}
+
+@media (min-width: 426px) {
 
 header,body,main,footer,
 .container-logo,
 .fonction,
 .container-logo.first,
 .container-menu, .img-top {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     min-width: 425px;
 }
 
@@ -697,7 +709,7 @@ header,body,main,footer,
 .restaurant {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -708,7 +720,7 @@ footer {
     padding-bottom: 20px;
     align-items: flex-end;
 
-    max-width: 1440px;
+    /* max-width: 1440px; */
     min-width: 425px;
     
 }
@@ -749,9 +761,16 @@ margin-right: 30px;
 
 }
 
-@media (min-width: 800px) and (max-width: 1440px) {
+@media (min-width: 800px) {
 
     .container-logo {
         gap: 30%;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .rest {
+        align-items: stretch;
     }
 }
